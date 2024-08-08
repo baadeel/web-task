@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://www.eganridge.com/images/bg_images/459/pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 150px 1fr 30px;
+}
+
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+header li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+}
+
+nav {
+    padding: 55px 55px 55px 10px;
+}
+
+header img {
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+header a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .3s ease-in;
+    color: white;
+    text-shadow: 2px 2px 10px rgb(255, 255, 30);
+}
+
+header a:hover {
+    transform: scale(1.3);
+    color: rgb(138, 255, 120);
+}
+
+.preview {
+    border: 2px solid #000;
+    border-radius: 3px;
+    margin: 25px;
+}
+
+.preview h1 {
+    text-align: center;
+    width: 100%;
+    color: rgba(85, 150, 75, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.preview div {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.preview img {
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 200px;
+    height: auto;
+    flex: auto;
+}
+
+.landing {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 250px;
+}
+
+.p1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 700px 200px;
+    justify-items: center;
+    align-items: center;
+}
+
+.p2 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 600px 150px;
+    justify-items: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main {
+    grid-column: 2/3;
+}
+
+main p {
+    font-family: "Finger Paint", sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 238, 0);
+    text-shadow: 10px 1px 1px rgba(139, 69, 19, 1);
+}
+
+
+.pizzeria {
+    text-shadow: 10px 1px 1px rgba(139, 69, 19, 1);
+    animation: typing 3s ease both;
+    height: 80px;
+    grid-column: 2/3;
+
+}
+
+.paradiso {
+    animation: typing 3s ease both .3s;
+    grid-column: 2/3;
+}
+
+.frase {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 255px 80px 115px 250px;
+    align-items: center;
+}
+
+.oferta {
+    display: inline;
+    color: #fff;
+    text-shadow: none;
+    font-size: 2rem;
+    animation: typing 5s ease both .6s;
+}
+
+.frase > p {
+    grid-column: 2/3;
+}
+
+.frase p:last-child {
+    grid-column: 4/5;
+}
+
+.main img {
+    animation: typing 5s ease both .6s;
+    box-shadow: #000;
+    transition: transform 2s;
+}
+
+
+.main img:hover {
+    transform: scale(1.5);
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    background: none;
+    background-color: 255, 255, 255, .4;
+    backdrop-filter: blur(.3px);
+    border: 2px solid #938e8e71;
+    box-shadow: 1px 1px 1px 3px #000;
+    color: #fff;
+    font-family: "Finger Paint", sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 1s;
+    grid-column: 2/3;
+}
+
+.menu {
+padding: 20px;
+display: grid;
+grid-template-columns: 1fr 200px 380px;
+}
+
+.boton:hover {
+    background-color: #ffffff2a;
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #ffffff46;
+    backdrop-filter: blur(.3px);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
