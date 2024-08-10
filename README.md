@@ -19,11 +19,13 @@ All these things will be taken into account for future projects.
 
 # 📸 Images
 * **Landing page:**
-![image](https://github.com/user-attachments/assets/8416c4d8-32f0-4588-980c-90efd3c12817 =250x250)
+<img src="https://github.com/user-attachments/assets/8416c4d8-32f0-4588-980c-90efd3c12817" width="600">
 
 
+* **Smartphone landing page:**
 
-  ![image](https://github.com/user-attachments/assets/2d183481-ed27-4c63-b6ff-7f43f1925d15)
+<img src="https://github.com/user-attachments/assets/93d35468-7199-4064-8e04-ee039d5df54e" width="200">
+
 
 
 
