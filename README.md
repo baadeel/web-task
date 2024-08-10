@@ -19,7 +19,8 @@ All these things will be taken into account for future projects.
 
 # 📸 Images
 * **Landing page:**
-  ![image](https://github.com/user-attachments/assets/21fbb7b6-014e-4a83-8fb8-9b302d846e50)
+ ![image](https://github.com/user-attachments/assets/176d041a-756c-4847-bdd2-64d4bbc77700)
+
 
   ![image](https://github.com/user-attachments/assets/2d183481-ed27-4c63-b6ff-7f43f1925d15)
 
