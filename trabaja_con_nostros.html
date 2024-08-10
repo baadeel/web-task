@@ -35,20 +35,195 @@
     </header>
 
     <main class="tMain">
+        <section class="contenedor">
+            <article class="trabajaConNosotros">
+                <h1>Trabaja con nosotros</h1>
+                <form action="#" method="post">
+
+                    <fieldset class="datosPersonales">
+                        <legend>Datos personales</legend>
+                        <section class="nombre">
+                        <label for="nombre">* Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" size="30" placeholder="Introduzca su nombre..."
+                            required>
+                        </section>
+
+                        <section class="apellidos">
+                        <label for="apellidos">* Apellidos: </label>
+                        <input type="text" name="apellidos" id="apellidos" size="30"
+                            placeholder="Introduzca sus apellidos..." required>
+                        </section>
+                        
+                        <section class="nacimiento">
+                        <label for="nacimiento">* Nacionalidad: </label>
+                        <input type="text" name="nac" id="nac" size="20" placeholder="Su nacionalidad..."
+                            required>
+                        </section>
+
+                        <section class="dni">
+                        <label for="dni">* DNI: </label>
+                        <input type="text" name="dni" id="dni" size="30" placeholder="Introduzca su DNI..." required>
+                        </section>
+
+                        <section class="fecha">
+                        <label for="fecha">* Fecha de nacimiento: </label>
+                        <input type="date" name="fecha" id="fech" size="30" required>
+                        </section>
+
+                        <section class="lugar">
+                        <label for="lugar">* Lugar de nacimiento:</label>
+                        <input type="text" name="lugar" id="lugar" size="20"
+                            placeholder="Lugar de nacimiento..." required>
+                        </section>
+
+                        <section class="postal">
+                        <label for="postal">* Código postal: </label>
+                        <input type="text" name="postal" id="postal" size="10" placeholder="Código..."
+                            required>
+                        </section>
+
+                        <section class="email">
+                        <label for="email">* Email: </label>
+                        <input type="email" id="email" name="email" id="email" size="30"
+                            placeholder="Introduzca su email..." required>
+                        </section>
+                       
+                        <section class="telefono">
+                        <label for="telefono">Teléfono: </label>
+                        <input id="telefono" size="20" type="tel" name="telefono" id="telefono" pattern="[0-9]{9}"
+                            placeholder="Introduzca su teléfono...">
+                        </section>
+                    </fieldset>
+                    
+                    <fieldset class="formacion">
+                        <legend>Formación</legend>
+                        <div>
+                        <div>
+                        <label for="titulaciones">* Titulación: </label>
+                        <input type="date" name="fechaTit" id="titulaciones" size="30">
+                        <input type="text" name="postal" id="postal" size="20" placeholder="Introduzca su titulación..."
+                            required>
+                        </div>
+                        <br>
+        
+                        <div>
+                        <label for="titulaciones2">* Titulación: </label>
+                        <input type="date" name="fechaTit" id="titulaciones2" size="30">
+                        
+                        <input type="text" name="postal" id="postal" size="20" placeholder="Introduzca su titulación..."
+                            required>
+                        </div>
+                        <br>
+                        <div>
+                            <br>
+                        <label for="titulaciones3">* Titulación: </label>
+                        <input type="date" name="fechaTit" id="titulaciones3" size="30" >
+                        <input type="text" name="postal" id="postal" size="20" placeholder="Introduzca su titulación..."
+                            required>
+                        </div>
+                    </div>
+                    </fieldset>
+                    </fieldset>
+                    
+                    <fieldset class="idiomas">
+                        <legend>Idiomas</legend>
+                        <label for="idioma1">Idioma: </label>
+                        <input type="text" name="idioma1" id="idioma1" size="30" placeholder="Nombre del idioma...">
+                        <label for="hablado1">Hablado:</label>
+                        <select name="hablado1" id="hablado1" size="1">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+                        <label for="leido1">Leído:</label>
+                        <select name="leido1" id="leido1" size="1">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+                        <label for="escrito1">Escrito:</label>
+                        <select size="1" name="escrito1" id="escrito1">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+
+                        <label for="idioma2">Idioma: </label>
+                        <input type="text" name="idioma2" id="idioma2" size="30" placeholder="Nombre del idioma...">
+                        <label for="hablado2">Hablado:</label>
+                        <select name="hablado2" id="hablado2" size="1">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+                        <label for="leido2">Leído:</label>
+                        <select name="leido2" id="leido2" size="1">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+                        <label for="escrito2">Escrito:</label>
+                        <select size="1" name="escrito2" id="escrito2">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+
+                        <label for="idioma3">Idioma: </label>
+                        <input type="text" name="idioma3" id="idioma3" size="30" placeholder="Nombre del idioma...">
+                        <label for="hablado3">Hablado:</label>
+                        <select name="hablado3" id="hablado3" size="1">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+                        <label for="leido3">Leído:</label>
+                        <select name="leido3" id="leido3" size="1">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+                        <label for="escrito3">Escrito:</label>
+                        <select size="1" name="escrito3" id="escrito3">
+                            <option value="Excelente">Excelente</option>
+                            <option value="Bien">Bien</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Nada">Nada</option>
+                        </select>
+            
+
+                    </fieldset>
+
+
+                    <div class="tBoton" > 
+                    <input id="boton" type="submit" name="boton" value="ENVIAR">
+                </div>
+                </form>
+            </article>
+            <img class="persona" src="img/chino.png">
+        </section>
 
     </main>
 
     <footer>
         <p>
-            Copyright © 2024 
+            Copyright © 2024
         </p>
         <p>|</p>
         <p>También puedes visitarnos en </p>
         <div>
-        
-        <a href="https://facebook.com/" target="_blank"><img with="25px" height="25px" src="img/facebook.svg"></a>
-        <a href="https://instagram.com/" target="_blank"><img with="35px" height="35px" src="img/ig.svg"></a>
-        <a href="https://x.com/home" target="_blank"><img with="20px" height="20px" src="img/twitter.svg"></a>
+
+            <a href="https://facebook.com/" target="_blank"><img with="25px" height="25px" src="img/facebook.svg"></a>
+            <a href="https://instagram.com/" target="_blank"><img with="32px" height="32px" src="img/ig.svg"></a>
+            <a href="https://x.com/home" target="_blank"><img with="20px" height="20px" src="img/twitter.svg"></a>
         </div>
     </footer>
 </body>

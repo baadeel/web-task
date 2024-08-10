@@ -22,6 +22,20 @@ body {
     background-blend-mode: multiply;
 }
 
+body > div {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/pizzahd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    filter: drop-shadow(8px);
+    z-index: -1;
+}
+
+
 
 header {
     width: 100%;
@@ -58,7 +72,7 @@ header li {
 
 nav {
     padding: 55px 40px 55px 0px;
-    width: 980px;
+    width: 950px;
 }
 
 
@@ -240,6 +254,7 @@ margin-right: 100px;
     background-color: #ffffff2a;
     transform: scale(1.1);
 }
+
 
 footer {
     display: flex;
@@ -567,7 +582,13 @@ iframe {
     width: 80%;
     height: 400px;
     margin-bottom: 25px;
+    margin-top: 8px;
+    transition: transform .2s ease-in-out;
 
+}
+
+.cMain iframe:hover {
+    transform: scale(1.1);
 }
 
 .cMain form {
@@ -587,6 +608,7 @@ iframe {
 .cMain input {
     justify-self: left;
     box-shadow: 5px 3px 2px #000;
+    padding-left: 6px;
     
 }
 
@@ -608,6 +630,12 @@ iframe {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
     margin-bottom: 25px;
+    transition: all .2s ease-in-out;
+}
+
+#boton:hover {
+    transform: scale(1.1);
+    color: rgb(237, 246, 138);
 }
 
 footer a{
@@ -617,6 +645,137 @@ transition: transform .1s ease-in-out;
 footer a:hover{
     transform: scale(1.1);
 }
+
+/* TRABAJA CON NOSOTROS */
+
+.tMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tBoton {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    grid-column: 1/3;
+}
+
+legend {
+    background-color: #ffbc9c6a;
+    border: 1px solid #000000;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 20px;
+  }
+
+.persona {
+transition: all .5s ease-in-out;
+}
+
+.persona:hover {
+    transform: scale(1.1);
+    filter: brightness(150%);
+}
+
+.tMain img {
+    mask-image: linear-gradient(#000 80%,#0000 100%);
+}
+
+.tMain .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    justify-content: center;
+    justify-items: center;
+
+    margin: 20px 50px 20px 50px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+
+    background-color: rgba(192, 192, 192, .5);
+    backdrop-filter: blur(5px);
+
+}
+
+.datosPersonales {
+    padding-bottom: 16px;
+    width: 430px;
+}
+
+.formacion > div {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+.formacion div div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tMain form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    margin: 0px 0px 20px 20px;
+    font-weight: bold;
+    
+}
+
+.idiomas {
+    padding-bottom: 16px;
+}
+
+.tMain h1 {
+    font-family: "Finger Paint", sans-serif;
+    font-size: 3rem;
+    color: rgb(255, 238, 0);
+    text-shadow: 10px 1px 1px rgba(139, 69, 19, 1);
+    text-align: center;
+}
+
+.tMain fieldset {
+    
+    padding-left: 10px;
+}
+
+
+
+
+.formacion {
+    width: 450px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.idiomas {
+    grid-column: 1/3;
+}
+
+
+fieldset label {
+    padding: 16px 6px 0px 16px;
+}
+
+.tMain input {
+    padding-left: 6px;
+    
+}
+
+.tMain {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+
+
+
 
 
 
@@ -646,6 +805,10 @@ footer a:hover{
         text-decoration: none;
         font-weight: normal;
         outline: none;
+    }
+
+    body > div {
+        display: none;
     }
 
     
@@ -822,6 +985,23 @@ footer a:hover{
     footer div{
         justify-self: start;
         padding-left: 10px;
+    }
+
+    .tMain .contenedor{
+        grid-template-columns: 1fr;
+    }
+
+    .formacion {
+        width: auto;
+    }
+    .datosPersonales {
+        width: auto;
+    }
+
+    .tMain form {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 10px;
     }
 
     
