@@ -3,7 +3,7 @@ This website has been created to improve my skills in HTML and CSS. This is my f
 This project only the graphic part.
 It also includes a smartphone design (images below)
 
-**Link:** [Click here to see the website](https://web-task-nzes10gbg-baadeels-projects.vercel.app/)
+**Link:** [Click here to see the website](https://web-task-jet.vercel.app)
 
 # 📐 Sections on the website 
 * **Landing page:** This is a welcome screen inviting the user to visit the Menu.
